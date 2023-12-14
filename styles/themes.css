@@ -6,12 +6,19 @@
 */
 
 :root.theme-dark {
-  --background-color: #000000;
   --themes-main-color: #00CC14;
+  --themes-background-color: #000000;
+  --font-weight-title: 785;
+  --font-weight-content: 465;
+  --background-gradient: 
+  repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+  linear-gradient(#007F0C 0 0.01%, #004306);
 }
 
 .theme-dark{
-  background-color: var(--background-color);
+  background-image: var(--background-gradient);
+  background-size: cover;
 }
 
 
@@ -20,23 +27,48 @@
 
 
   .theme-auto {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color);
+    --themes-main-color: #00CC14;
+    --font-weight-title: 785;
+    --font-weight-content: 465; */
+    --background-gradient: 
+    repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+    linear-gradient(#007F0C 0 0.01%, #004306);
+    background-image: var(--background-gradient);
+    background-size: cover;
   }
 }
 
 :root.theme-light {
-  --background-color: #FFFFFF; 
   --themes-main-color: #000;
+  --themes-background-color: #FFFFFF;
+  --font-weight-title: 700;
+  --font-weight-content: 400;
+  --background-gradient: 
+  repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
 }
 
 .theme-light{
-  background-color: var(--background-color);
+  background-image: var(--background-gradient);
+  background-size: cover;
 }
 
 @media (prefers-color-scheme: light) {
 
 
   .theme-auto {
-    background-color: var(--background-color);
+    --themes-main-color: #000;
+    --themes-background-color: #FFFFFF;
+    --font-weight-title: 700;
+    --font-weight-content: 400;
+    --background-gradient: 
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
+    background-image: var(--background-gradient);
+    background-size: cover;
   }
 }
