@@ -5,11 +5,18 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+.theme-dark {
+  background-image: var(--background-gradient);
+  background-size: cover;
+  color: var(--themes-main-color);
+}
+
 :root.theme-dark {
   --themes-main-color: #00cc14;
   --themes-background-color: #000;
   --font-weight-title: 785;
   --font-weight-content: 465;
+  --image-text: ;
   --background-gradient: repeating-linear-gradient(
       90deg,
       #000 0 2px,
@@ -19,18 +26,13 @@
     linear-gradient(#007f0c 0 0.01%, #004306);
 }
 
-.theme-dark {
-  background-image: var(--background-gradient);
-  background-size: cover;
-}
-
 @media (prefers-color-scheme: dark) {
 
   .theme-auto {
-    /* background-color: var(--background-color);
-    --themes-main-color: #00CC14;
+    --themes-main-color: #00cc14;
+    --themes-background-color: #000;
     --font-weight-title: 785;
-    --font-weight-content: 465; */
+    --font-weight-content: 465;
     --background-gradient: repeating-linear-gradient(
         90deg,
         #000 0 2px,
@@ -40,7 +42,14 @@
       linear-gradient(#007f0c 0 0.01%, #004306);
     background-image: var(--background-gradient);
     background-size: cover;
+    color: var(--themes-main-color);
   }
+}
+
+.theme-light {
+  background-image: var(--background-gradient);
+  background-size: cover;
+  color: var(--themes-main-color);
 }
 
 :root.theme-light {
@@ -55,11 +64,6 @@
     ),
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
-}
-
-.theme-light {
-  background-image: var(--background-gradient);
-  background-size: cover;
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,5 +82,6 @@
       linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
     background-image: var(--background-gradient);
     background-size: cover;
+    color: var(--themes-main-color);
   }
 }
