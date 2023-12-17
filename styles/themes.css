@@ -6,7 +6,6 @@
 */
 
 .theme-dark {
-  background-image: var(--background-gradient);
   background-size: cover;
   color: var(--themes-main-color);
 }
@@ -40,14 +39,12 @@
       ),
       repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
       linear-gradient(#007f0c 0 0.01%, #004306);
-    background-image: var(--background-gradient);
     background-size: cover;
     color: var(--themes-main-color);
   }
 }
 
 .theme-light {
-  background-image: var(--background-gradient);
   background-size: cover;
   color: var(--themes-main-color);
 }
@@ -80,7 +77,6 @@
       ),
       repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
-    background-image: var(--background-gradient);
     background-size: cover;
     color: var(--themes-main-color);
   }
