@@ -177,6 +177,38 @@
   width: 100%;
 }
 
+.filter-brightness{
+  filter: brightness(200%);
+}
+
+.filter-contrast{
+  filter: contrast(30%);
+}
+
+.filter-blur{
+  filter: blur(3.rem);
+}
+
+.filter-opacity{
+  filter: opacity(0.5);
+}
+
+.filter-grayscale{
+  filter: grayscale(0.8);
+}
+
+.filter-saturate{
+  filter: saturate(200%);
+}
+
+.filter-hue-rotate{
+  filter: hue-rotate(-90deg);
+}
+
+.filter-sepia{
+  filter: sepia(75%);
+}
+
 .image__text {
   font-family: var(--additionally-font-family);
   font-size: 14px;
