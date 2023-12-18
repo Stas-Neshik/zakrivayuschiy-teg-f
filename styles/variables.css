@@ -4,6 +4,10 @@
   --main-font-family: 'Inter', arial, helvetica, sans-serif;
   --additionally-font-family: 'PressStart2P', arial, helvetica, sans-serif;
   --font-size-main-content: 18px;
+  --font-size-main-buton: 14px;
+  --font-weight-text: 400;
   --font-weight-title: 700;
   --font-size-text: 400;
+
+  --normal-line-height: normal;
 }

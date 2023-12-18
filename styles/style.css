@@ -15,7 +15,7 @@
 */
 
 .page {
-  margin-top: 102px;
+  margin: 102px auto 0;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
@@ -25,7 +25,7 @@
 }
 
 .header {
-  margin: 0 auto 108px;
+  margin: 0 auto 100px;
   max-width: 696px;
   display: flex;
   flex-direction: column;
@@ -38,32 +38,44 @@
 }
 
 .header__title {
-  font-size: lamp(49px, 65px);
-  font-weight: 400;
+  color: var(--themes-main-color);
+  font-family: var(--additionally-font-family);
+  font-size: clamp(3.0625rem, 1.8125rem + 4vw, 4.0625rem);
+  font-style: normal;
+  font-weight: var(--font-weight-text);
+  line-height: var(--normal-line-height);
+  text-transform: uppercase;
+
   margin: 136px auto 20px;
 }
 
 .header__text {
-  font-size: clamp(14px, 23px);
-  font-weight: 400;
-  margin-block-end: 20px;
+  color: var(--themes-main-color);
+  font-family: var(--additionally-font-family);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-style: normal;
+  font-weight: var(--font-weight-text);
+  line-height: var(--normal-line-height);
+  text-transform: uppercase;
+  margin-block-end: 24px;
 }
 
 .header__theme-menu {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: var(--font-size-main-buton);
+  font-weight: var(--font-weight-text);
   margin-block-end: 25px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-inline-start: 15px;
   gap: 10px;
   position: relative;
 }
 
 .theme-menu__button {
+  text-transform: uppercase;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -120,7 +132,8 @@
   text-transform: uppercase;
   content: '▶';
   position: absolute;
-  left: -15px;
+  left: 0;
+  top: auto;
   animation: active 1s infinite linear;
 }
 
@@ -198,7 +211,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 25px;
+  padding: 25px 28px 25px 25px;
 }
 
 .card__text {
@@ -211,7 +224,7 @@
 .card__button {
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 9px;
 }
 
 .card__icon-button {
@@ -236,8 +249,8 @@
 
 .card__like-button {
   padding: 0;
-  width: 136px;
-  height: 38px;
+  width: 126px;
+  height: 39px;
 }
 
 .button {
@@ -292,7 +305,9 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 90%; /* 12.6px */
+  line-height: 90%;
+
+  padding: 9px 0;
 }
 
 .button__text:hover {
@@ -313,4 +328,55 @@
 .button__floppy {
   color: var(--themes-main-color);
   block-size: 21px;
+}
+
+.dialog__content {
+  max-width: 357px;
+  position: fixed;
+  inset: 0;
+  padding: 32px;
+}
+
+.dialog__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__floppy {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  width: 100%;
+  margin-block-start: 30px;
+}
+
+@media screen and (max-width: 376px) {
+
+  .header__title {
+    margin: 123px auto 20px;
+  }
+
+  .header__text {
+    margin-block-end: 22px;
+  }
+
+  .card__text-container {
+    padding: 17px 28px 25px 25px;
+  }
+
+  .card__button {
+    margin-block-start: 22px;
+  }
 }
