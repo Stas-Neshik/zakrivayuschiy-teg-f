@@ -6,4 +6,4 @@
 В этом проекте почти все, что я знаю в рамках курса по верстке.
 
 
-ГП не дает вставить ссылку 
+https://stas-neshik.github.io/zakrivayuschiy-teg-f/index.html
